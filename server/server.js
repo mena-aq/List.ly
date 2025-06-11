@@ -26,13 +26,12 @@ app.use('/api/tasks',taskRoutes);
 
 const PORT = process.env.PORT || 5050;
 
-/*
+
 //connect to db and start server
 connectDB().then(()=>{
     app.listen(PORT,()=>{
         console.log(`Listening on port ${PORT}`);
     })
 })
-*/
 
-module.exports = app;
+//module.exports = app;
