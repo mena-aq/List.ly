@@ -1,0 +1,54 @@
+.home{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.task-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding: 5%;
+  width: 100%;
+  transition: margin-right 0.3s ease-in-out;
+}
+
+.task-container.sidebar-open{
+  margin-right: 25%;
+}
+
+.task-heading{
+  font-weight:600;
+  opacity: 0.8;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  margin-bottom: 0rem;
+}
+
+.options-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.view-btn{
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.task-card{
+  min-height: 25%;
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: white;
+}

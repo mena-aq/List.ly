@@ -1,0 +1,53 @@
+.task-card .list-item{
+  list-style-type: none;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(222, 250, 247, 0.8);
+}
+
+.task-card .list-item:hover{
+    background: rgba(222, 250, 247, 1);
+    border: 0.1rem solid var(--primary-color);
+    /*transform: scale(1.05);*/
+}
+
+.task-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.list-item div{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.completed-task{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+input[type='checkbox'] {
+  accent-color: var(--primary-color); 
+}
+
+.task-btn-panel button{
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.task-btn-panel button:hover{
+  color: black;
+}
+
+.edit-input{
+  padding: 0.2rem;
+  font-size: 1rem;
+  max-width: 90%;
+  border: none;
+}

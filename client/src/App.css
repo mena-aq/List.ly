@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root{
+  --primary-font: "Varela Round", sans-serif;
+  --primary-color: #36D6C6;
+  --secondary-color: rgba(222, 250, 247, 1);
+}
+
+.App{
+  font-family: var(--primary-font);
+  /*
+  background: #defaf7;
+  background: radial-gradient(circle, rgba(222, 250, 247, 1) 0%, rgb(33, 177, 163) 100%);
+*/
+  background-image: url('../images/grid.jpg');
+}
+
+.logo{
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.primary-text{
+  color: var(--primary-color);
+}
+
+.grey-text{
+  color: lightgrey;
+}
+
+.red-text{
+  color: red;
+}
+
+.horizontal-flex{
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-flex-top{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+

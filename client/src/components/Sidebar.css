@@ -1,0 +1,17 @@
+.sidebar{
+  position: absolute;
+  top: 0;
+  right: -25%; 
+  height: 100%;
+  background-color: white;
+  width: 25%;
+  box-sizing: border-box; 
+  transition: right 0.3s ease-in-out; 
+  z-index: 1; 
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.sidebar-open{
+  right: 0;
+}

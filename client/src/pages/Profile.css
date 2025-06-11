@@ -1,0 +1,29 @@
+.profile{
+  height: 100vh;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  width: 50%;
+  padding: 2rem 1rem;
+  gap:0.5rem;
+  font-size: 1.2rem;
+}
+
+.profile-icon{
+  font-size: 5rem;
+  color: var(--primary-color);
+}
