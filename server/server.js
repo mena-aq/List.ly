@@ -8,12 +8,14 @@ const cors = require('cors');
 //db
 const connectDB = require('./config/db'); 
 
-
 //middleware
 const path = require('path');
 app.use(express.static(path.join(__dirname,'..', 'client','public')));
 app.use(express.json());
 app.use(cors());
+
+//connect to db
+connectDB();
 
 //routes
 const authRoutes = require('./routes/authRoutes');
@@ -24,11 +26,13 @@ app.use('/api/tasks',taskRoutes);
 
 const PORT = process.env.PORT || 5050;
 
+/*
 //connect to db and start server
 connectDB().then(()=>{
     app.listen(PORT,()=>{
         console.log(`Listening on port ${PORT}`);
     })
 })
+*/
 
 module.exports = app;
