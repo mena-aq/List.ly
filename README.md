@@ -36,8 +36,14 @@ cd your-repo-name
 ```
 
 Install dependencies for the frontend and backend, run 
-```npm install``
-in server/ and client/
+```
+cd server
+npm install
+```
+```
+cd client
+npm install
+```
 
 Set up your .env following the .sample.env provided
 
@@ -58,7 +64,7 @@ npm start
 For API documentation consult this repository's wiki tab.
 
 
-### Some Info
+## Some Info
 
 This repository currently has some known issues regarding latency, due to API response speeds.
 
