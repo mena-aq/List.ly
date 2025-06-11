@@ -130,8 +130,8 @@ export function TaskProvider({children}){
 
     const checkOverdue = (task_id) =>{
         const task = tasks.find(t=> t._id === task_id);
-        if (!task) return false;
-        return (task.due_date>new Date());
+        if (!task || !task.due_date) return false;
+        return new Date(task.due_date) < new Date();  
     }
 
 

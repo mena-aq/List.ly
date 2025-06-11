@@ -89,22 +89,22 @@ export default function Login({login}){
             <div>
                 <h1 className='logo'>List.ly <span><Icons.Pencil /></span></h1>
             </div>
+            <div className="tab-toggle">
+                <button 
+                    className={isLogin ? 'active' : ''} 
+                    onClick={() => setIsLogin(true)}
+                >
+                    Login
+                </button>
+                <button 
+                    className={!isLogin ? 'active' : ''} 
+                    onClick={() => setIsLogin(false)}
+                >
+                    Sign Up
+                </button>
+                <div className={`tab-slider ${isLogin ? 'left' : 'right'}`}></div>
+             </div>
             <div className = 'card auth-container'>
-                <div className="tab-toggle">
-                    <button 
-                        className={isLogin ? 'active' : ''} 
-                        onClick={() => setIsLogin(true)}
-                    >
-                        Login
-                    </button>
-                    <button 
-                        className={!isLogin ? 'active' : ''} 
-                        onClick={() => setIsLogin(false)}
-                    >
-                        Sign Up
-                    </button>
-                    <div className={`tab-slider ${isLogin ? 'left' : 'right'}`}></div>
-                </div>
                 <form onSubmit={handleSubmit} className='auth-form'>
                     {!isLogin &&
                         <div>

@@ -8,7 +8,7 @@
   box-sizing: border-box; 
   transition: right 0.3s ease-in-out; 
   z-index: 1; 
-  padding: 1.2rem;
+  padding: 1.2rem 2rem;
   border-radius: 1rem;
 }
 

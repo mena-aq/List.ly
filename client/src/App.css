@@ -13,6 +13,8 @@
   background: radial-gradient(circle, rgba(222, 250, 247, 1) 0%, rgb(33, 177, 163) 100%);
 */
   background-image: url('../images/grid.jpg');
+  overflow-x: hidden;
+
 }
 
 .logo{

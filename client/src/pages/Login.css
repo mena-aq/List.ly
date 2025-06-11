@@ -7,6 +7,7 @@
   gap: 5%;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .auth-container{
@@ -14,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
 }
 
 .auth-form{
@@ -33,6 +34,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
 }
 
 .tab-toggle {
@@ -42,7 +44,7 @@
   border-radius: 2rem;
   overflow: hidden;
   margin-bottom: 1rem;
-  width: 30%;
+  width: 12rem;
 }
 
 .tab-toggle button {
@@ -86,6 +88,7 @@
   font-size: 1.2rem;
   text-align: center;
   border-radius: 0.8rem;
+  width: 80%;
 }
 .login-input:focus{
   outline: none;
